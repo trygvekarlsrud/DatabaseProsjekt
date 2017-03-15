@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="mainPane" prefHeight="817.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ProgramController">
+   <children>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="817.0" prefWidth="872.0">
+         <children>
+            <TabPane layoutX="268.0" layoutY="-3.0" prefHeight="817.0" prefWidth="932.0" styleClass="tabPane" tabClosingPolicy="UNAVAILABLE" tabMinWidth="188.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-3.0">
+              <tabs>
+                  <Tab fx:id="trainingTab" style="-fx-font-size: 12pt; -fx-font-family: Segoe UI Light; -fx-text-color: white;" styleClass="background" text="Training Session">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="848.0" prefWidth="885.0">
+                           <children>
+                              <Text layoutX="53.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Duration" wrappingWidth="72.8466796875" />
+                              <TextField layoutX="142.0" layoutY="90.0" promptText="minutes" />
+                              <DatePicker layoutX="142.0" layoutY="174.0" />
+                              <Text layoutX="67.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date" />
+                              <Text layoutX="67.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weather" />
+                              <Text layoutX="51.0" layoutY="450.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Temperature" />
+                              <TextField layoutX="142.0" layoutY="324.0" promptText="text" />
+                              <TextField layoutX="142.0" layoutY="429.0" promptText="Celsius" />
+                              <TextField layoutX="547.0" layoutY="91.0" promptText="1-10" />
+                              <TextField layoutX="546.0" layoutY="175.0" promptText="1-10" />
+                              <TextField layoutX="546.0" layoutY="256.0" promptText="text" />
+                              <TextArea layoutX="540.0" layoutY="389.0" prefHeight="200.0" prefWidth="200.0" promptText="text" />
+                              <Text layoutX="447.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Performance" />
+                              <Text layoutX="468.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Shape" />
+                              <Text layoutX="461.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Purpose" />
+                              <Text layoutX="69.0" layoutY="277.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Where" />
+                              <Button layoutX="374.0" layoutY="672.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="125.0" text="Submit Training" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                <Tab fx:id="resultTab" styleClass="background" text="Results">
+                  <content>
+                    <AnchorPane fx:id="questionTab" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+                <Tab fx:id="resulttabellTab" styleClass="background" text="Result Table">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                  </content>
+                </Tab>
+                <Tab fx:id="exerciseTab" styleClass="background" text="Exercises">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1438.0" prefWidth="968.0" />
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
